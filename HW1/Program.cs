@@ -14,13 +14,17 @@ namespace HW1
 
             #region Task 1
             int a, b;
+            Console.Write("Enter first number: ");
             a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
             b = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(a + b);
             Console.WriteLine(a - b);
             Console.WriteLine(a * b);
             if (b != 0)
+            {
                 Console.WriteLine(a / b);
+            }
             #endregion
 
             #region Task 2
@@ -31,20 +35,29 @@ namespace HW1
 
             #region Task 3
             char sym1, sym2, sym3;
+            Console.Write("Enter first symbol: ");
             sym1 = Convert.ToChar(Console.ReadLine());
+            Console.Write("Enter second symbol: ");
             sym2 = Convert.ToChar(Console.ReadLine());
+            Console.Write("Enter third symbol: ");
             sym3 = Convert.ToChar(Console.ReadLine());
             Console.WriteLine("You enter {0},{1},{2}", sym1, sym2, sym3);
             #endregion
 
             #region Task 4
             int number1, number2;
+            Console.Write("Enter first number: ");
             number1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
             number2 = Convert.ToInt32(Console.ReadLine());
             if (number1 > 0 && number2 > 0)
+            {
                 Console.WriteLine("True");
+            }
             else
+            {
                 Console.WriteLine("False");
+            }
             #endregion
 
             #endregion
@@ -52,6 +65,7 @@ namespace HW1
             #region HomeWork
 
             #region Task B
+            Console.Write("Enter number: ");
             int _a = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Area = {0}", _a * _a);
             Console.WriteLine("Perimetr = {0}", (_a + _a) * 2);
@@ -68,6 +82,7 @@ namespace HW1
             #endregion
 
             #region Task D
+            Console.Write("Enter radius: ");
             double r = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Length = {0}", 2 * Math.PI * r);
             Console.WriteLine("Area = {0}", Math.PI * Math.Pow(r, 2));

@@ -14,7 +14,9 @@ namespace HW3
 
             #region Task 1
             int a, b, count = 0;
+            Console.Write("Enter first number: ");
             a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
             b = Convert.ToInt32(Console.ReadLine());
             if (b > a)
             {
@@ -33,6 +35,7 @@ namespace HW3
             #endregion
 
             #region Task 2
+            Console.Write("Enter string: ");
             string str = Console.ReadLine();
             for (int i = 1; i < str.Length; i += 2)
             {
@@ -47,12 +50,14 @@ namespace HW3
             dic.Add("Tea", 50);
             dic.Add("Juice", 70);
             dic.Add("Water", 10);
+            Console.Write("Enter name: ");
             string name = Console.ReadLine();
             Console.WriteLine(dic[name]);
             #endregion
 
             #region Task 4
             int sum = 0, scount = 0;
+            Console.Write("Enter number: ");
             int number = Convert.ToInt32(Console.ReadLine());
             while (number >= 0)
             {
@@ -64,6 +69,7 @@ namespace HW3
             #endregion
 
             #region Task 5
+            Console.Write("Enter year: ");
             int year = Convert.ToInt32(Console.ReadLine());
             if (year % 4 == 0)
             {
@@ -90,6 +96,7 @@ namespace HW3
             #endregion
 
             #region Task 6
+            Console.Write("Enter number: ");
             int snumber = Convert.ToInt32(Console.ReadLine());
             int ssum = 0;
             while (snumber > 0)
@@ -102,6 +109,7 @@ namespace HW3
             #endregion
 
             #region Task 7
+            Console.Write("Enter number: ");
             int qnumber = Convert.ToInt32(Console.ReadLine());
             int count_dig = 0, count_np = 0;
             int buf_qnumber = qnumber;
@@ -134,6 +142,7 @@ namespace HW3
             #endregion
             #region HomeWork
             #region Task A
+            Console.Write("Enter string: ");
             string text = Console.ReadLine();
             int count_a = 0, count_o = 0, count_i = 0, count_e = 0;
             foreach (var current in text)
@@ -167,7 +176,7 @@ namespace HW3
             Month.Add("October", 31);
             Month.Add("November", 30);
             Month.Add("December", 31);
-
+            Console.Write("Enter month: ");
             string cur_month = Console.ReadLine();
             Console.WriteLine(Month[cur_month]);
 
@@ -178,6 +187,7 @@ namespace HW3
             int count_pos = 0;
             for (int i = 0; i < arr.Length; i++)
             {
+                Console.Write("Enter {0} number: ",i);
                 arr[i] = Convert.ToInt32(Console.ReadLine());
                 if (i < 5 && arr[i] > 0)
                 {

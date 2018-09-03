@@ -43,7 +43,9 @@ namespace HW2
 
             #region Task 1
             int day, month;
+            Console.Write("Enter day number: ");
             day = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter month number: ");
             month = Convert.ToInt32(Console.ReadLine());
             if (day < 31 && month < 12)
             {
@@ -56,6 +58,7 @@ namespace HW2
             #endregion
 
             #region Task 2
+            Console.Write("Enter number: ");
             double num = Convert.ToDouble(Console.ReadLine());
             double buf = (num - (int)num) * 10;
             int num1 = (int)buf;
@@ -103,8 +106,11 @@ namespace HW2
 
             #region Task A
             double f_num1, f_num2, f_num3;
+            Console.Write("Enter first number: ");
             f_num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter second number: ");
             f_num2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter third number: ");
             f_num3 = Convert.ToDouble(Console.ReadLine());
 
             if (f_num1 >= -5 && f_num1 <= 5)
@@ -122,8 +128,11 @@ namespace HW2
             #endregion
             #region Task B
             int i_num1, i_num2, i_num3;
+            Console.Write("Enter first number: ");
             i_num1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter second number: ");
             i_num2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter third number: ");
             i_num3 = Convert.ToInt32(Console.ReadLine());
             if (i_num2 > i_num1)
             {
@@ -163,6 +172,7 @@ namespace HW2
                 Console.WriteLine("Error 401");
             }
             #endregion
+
             #region Task D
             Dog d = new Dog();
             d.Name = Console.ReadLine();
