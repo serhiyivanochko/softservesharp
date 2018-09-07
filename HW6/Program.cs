@@ -23,10 +23,6 @@ namespace HW6
         }
         #endregion
 
-        #region Task2
-
-        #endregion
-
         #region Task3
         static void ReadFolder(List<string> list, DirectoryInfo dir)
         {
@@ -115,15 +111,20 @@ namespace HW6
             List<string> list = new List<string>();
             ReadFolder(list, dir);
             StreamWriter sw1 = new StreamWriter("DirectoryC.txt");
-            foreach (var current in list)
+            try
             {
-                try
+                foreach (var current in list)
                 {
+
                     sw1.WriteLine(current);
+
                 }
-                catch { }
             }
-            sw1.Close();
+            catch {
+                Console.WriteLine("Error");
+            }
+            finally { sw1.Close(); }
+            
 
 
 
@@ -146,12 +147,21 @@ namespace HW6
             #region HomeWork 1
             Dictionary<string, string> dic = new Dictionary<string, string>();
             StreamReader sr1 = new StreamReader("phones.txt");
-            string str1;
-            while ((str1 = sr1.ReadLine()) != null) {
-                string[] dic_buf = str1.Split(';');
-                dic.Add(dic_buf[0], dic_buf[1]);
+            try
+            {
+                string str1;
+                while ((str1 = sr1.ReadLine()) != null)
+                {
+                    string[] dic_buf = str1.Split(';');
+                    dic.Add(dic_buf[0], dic_buf[1]);
+                }
             }
-            sr1.Close();
+            catch
+            {
+                Console.WriteLine("Error");
+            }
+            finally { sr1.Close(); }
+            
             Console.Write("Enter name: ");
             string name = Console.ReadLine();
             try
@@ -163,10 +173,19 @@ namespace HW6
             }
 
             StreamWriter sw2 = new StreamWriter("Phone.txt");
-            foreach (var current in dic) {
-                sw2.WriteLine(current.Value);
+            try
+            {
+                foreach (var current in dic)
+                {
+                    sw2.WriteLine(current.Value);
+                }
             }
-            sw2.Close();
+            catch
+            {
+                Console.WriteLine("Error");
+            }
+            finally { sw2.Close(); }
+            
             string regex = @"^80\d{9}$";
 
             for (int i = 0; i < dic.Keys.Count; i++)
@@ -179,10 +198,19 @@ namespace HW6
             }
 
             sw2 = new StreamWriter("New.txt");
-            foreach (var current in dic) {
-                sw2.WriteLine(current.Key + ";" + current.Value);
+            try
+            {
+                foreach (var current in dic)
+                {
+                    sw2.WriteLine(current.Key + ";" + current.Value);
+                }
             }
-            sw2.Close();
+            catch
+            {
+                Console.WriteLine("Error");
+            }
+            finally { sw2.Close(); }
+            
             #endregion
 
             #region HomeWork 2
