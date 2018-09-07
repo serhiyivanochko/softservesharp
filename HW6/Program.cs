@@ -74,71 +74,74 @@ namespace HW6
 
         static void Main(string[] args)
         {
-            //#region Task 1
-            //double num1 = 0.5, num2 = 0;
-            //Console.WriteLine(Div(num1, num2));
-            //#endregion
+            #region Task 1
+            double num1 = 0.5, num2 = 0;
+            Console.WriteLine(Div(num1, num2));
+            #endregion
 
-            //#region Task2
-            //StreamReader sr = new StreamReader("data.txt");
-            //StreamWriter sw = new StreamWriter("rez.txt");
+            #region Task2
+            StreamReader sr = new StreamReader("data.txt");
+            StreamWriter sw = new StreamWriter("rez.txt");
 
-            //string str;
-            //try
-            //{
-            //    while ((str = sr.ReadLine()) != null)
-            //    {
-            //        sw.WriteLine(str);
-            //    }
-            //}
-            //catch
-            //{
-            //    Console.WriteLine("Error");
-            //}
-            //finally
-            //{
-            //    sr.Close();
-            //    sw.Close();
-            //}
-            //try
-            //{
-            //    File.WriteAllText("rez.txt", File.ReadAllText("data.txt"));
-            //}
-            //catch {
-            //    Console.WriteLine("Error");
-            //}
-            //#endregion
+            string str;
+            try
+            {
+                while ((str = sr.ReadLine()) != null)
+                {
+                    sw.WriteLine(str);
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Error");
+            }
+            finally
+            {
+                sr.Close();
+                sw.Close();
+            }
+            try
+            {
+                File.WriteAllText("rez.txt", File.ReadAllText("data.txt"));
+            }
+            catch
+            {
+                Console.WriteLine("Error");
+            }
+            #endregion
 
-            //#region Task3
-            //DirectoryInfo dir = new DirectoryInfo(@"C:\");
-            //List<string> list = new List<string>();
-            //ReadFolder(list, dir);
-            //StreamWriter sw1 = new StreamWriter("DirectoryC.txt");
-            //foreach (var current in list) {
-            //    try
-            //    {
-            //        sw1.WriteLine(current);
-            //    }
-            //    catch { }
-            //}
-            //sw1.Close();
+            #region Task3
+            DirectoryInfo dir = new DirectoryInfo(@"C:\");
+            List<string> list = new List<string>();
+            ReadFolder(list, dir);
+            StreamWriter sw1 = new StreamWriter("DirectoryC.txt");
+            foreach (var current in list)
+            {
+                try
+                {
+                    sw1.WriteLine(current);
+                }
+                catch { }
+            }
+            sw1.Close();
 
 
 
-            //#endregion
+            #endregion
 
-            //#region Task4
-            //string sourceDir = @"D:\";
-            //string[] txtList = null;
-            //try
-            //{
-            //    txtList = Directory.GetFiles(sourceDir, "*.txt");
-            //}
-            //catch { }
-            //foreach (var current in txtList) {
-            //    Console.WriteLine(File.ReadAllText(current));
-            //}
-            //#endregion
+            #region Task4
+            string sourceDir = @"D:\";
+            string[] txtList = null;
+            try
+            {
+                txtList = Directory.GetFiles(sourceDir, "*.txt");
+            }
+            catch { }
+            foreach (var current in txtList)
+            {
+                Console.WriteLine(File.ReadAllText(current));
+            }
+            #endregion
 
             #region HomeWork 1
             Dictionary<string, string> dic = new Dictionary<string, string>();
