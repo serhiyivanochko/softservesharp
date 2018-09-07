@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace HW6
@@ -52,75 +53,144 @@ namespace HW6
         }
         #endregion
 
-        #region Task4
+        #region Homework 2
+        static string Output(object obj, int start, int end) {
+            try
+            {
+                if (Convert.ToInt32(obj) > start && Convert.ToInt32(obj) < end)
+                {
+                    return obj.ToString();
+                }
+                else {
+                    return "";
+                }
+            }
+            catch (Exception e) {
+                return e.Message;
+            }
 
+        }
         #endregion
+
         static void Main(string[] args)
         {
-            #region Task 1
-            double num1 = 0.5, num2 = 0;
-            Console.WriteLine(Div(num1, num2));
-            #endregion
+            //#region Task 1
+            //double num1 = 0.5, num2 = 0;
+            //Console.WriteLine(Div(num1, num2));
+            //#endregion
 
-            #region Task2
-            StreamReader sr = new StreamReader("data.txt");
-            StreamWriter sw = new StreamWriter("rez.txt");
+            //#region Task2
+            //StreamReader sr = new StreamReader("data.txt");
+            //StreamWriter sw = new StreamWriter("rez.txt");
 
-            string str;
+            //string str;
+            //try
+            //{
+            //    while ((str = sr.ReadLine()) != null)
+            //    {
+            //        sw.WriteLine(str);
+            //    }
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("Error");
+            //}
+            //finally
+            //{
+            //    sr.Close();
+            //    sw.Close();
+            //}
+            //try
+            //{
+            //    File.WriteAllText("rez.txt", File.ReadAllText("data.txt"));
+            //}
+            //catch {
+            //    Console.WriteLine("Error");
+            //}
+            //#endregion
+
+            //#region Task3
+            //DirectoryInfo dir = new DirectoryInfo(@"C:\");
+            //List<string> list = new List<string>();
+            //ReadFolder(list, dir);
+            //StreamWriter sw1 = new StreamWriter("DirectoryC.txt");
+            //foreach (var current in list) {
+            //    try
+            //    {
+            //        sw1.WriteLine(current);
+            //    }
+            //    catch { }
+            //}
+            //sw1.Close();
+
+
+
+            //#endregion
+
+            //#region Task4
+            //string sourceDir = @"D:\";
+            //string[] txtList = null;
+            //try
+            //{
+            //    txtList = Directory.GetFiles(sourceDir, "*.txt");
+            //}
+            //catch { }
+            //foreach (var current in txtList) {
+            //    Console.WriteLine(File.ReadAllText(current));
+            //}
+            //#endregion
+
+            #region HomeWork 1
+            Dictionary<string, string> dic = new Dictionary<string, string>();
+            StreamReader sr1 = new StreamReader("phones.txt");
+            string str1;
+            while ((str1 = sr1.ReadLine()) != null) {
+                string[] dic_buf = str1.Split(';');
+                dic.Add(dic_buf[0], dic_buf[1]);
+            }
+            sr1.Close();
+            Console.Write("Enter name: ");
+            string name = Console.ReadLine();
             try
             {
-                while ((str = sr.ReadLine()) != null)
-                {
-                    sw.WriteLine(str);
-                }
-            }
-            catch
-            {
-                Console.WriteLine("Error");
-            }
-            finally
-            {
-                sr.Close();
-                sw.Close();
-            }
-            try
-            {
-                File.WriteAllText("rez.txt", File.ReadAllText("data.txt"));
+                Console.WriteLine("Phone: {0}", dic[name]);
             }
             catch {
-                Console.WriteLine("Error");
+                Console.WriteLine("Cannot find number");
             }
-            #endregion
 
-            #region Task3
-            DirectoryInfo dir = new DirectoryInfo(@"C:\");
-            List<string> list = new List<string>();
-            ReadFolder(list, dir);
-            StreamWriter sw1 = new StreamWriter("DirectoryC.txt");
-            foreach (var current in list) {
-                try
-                {
-                    sw1.WriteLine(current);
-                }
-                catch { }
+            StreamWriter sw2 = new StreamWriter("Phone.txt");
+            foreach (var current in dic) {
+                sw2.WriteLine(current.Value);
             }
-            sw1.Close();
+            sw2.Close();
+            string regex = @"^80\d{9}$";
 
-
-
-            #endregion
-
-            #region Task4
-            string sourceDir = @"D:\";
-            string[] txtList = null;
-            try
+            for (int i = 0; i < dic.Keys.Count; i++)
             {
-                txtList = Directory.GetFiles(sourceDir, "*.txt");
+                if (Regex.Match(dic.Values.ElementAt(i), regex).Success)
+                {
+                    dic[dic.Keys.ElementAt(i)] = dic.Values.ElementAt(i).Replace("80", "+380");
+                }
+
             }
-            catch { }
-            foreach (var current in txtList) {
-                Console.WriteLine(File.ReadAllText(current));
+
+            sw2 = new StreamWriter("New.txt");
+            foreach (var current in dic) {
+                sw2.WriteLine(current.Key + ";" + current.Value);
             }
+            sw2.Close();
+            #endregion
+
+            #region HomeWork 2
+            object a = "";
+            do
+            {
+                Console.WriteLine("Enter smth");
+                a = Console.ReadLine();
+                Console.WriteLine(Output(a, 5, 10));
+            } while (a != "");
+
             #endregion
         }
     }

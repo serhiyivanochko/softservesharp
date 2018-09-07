@@ -5,3 +5,10 @@ c:\users\sivanotc\source\repos\ConsoleApp1\HW3\obj\Debug\HW3.csprojAssemblyRefer
 c:\users\sivanotc\source\repos\ConsoleApp1\HW3\obj\Debug\HW3.csproj.CoreCompileInputs.cache
 c:\users\sivanotc\source\repos\ConsoleApp1\HW3\obj\Debug\HW3.exe
 c:\users\sivanotc\source\repos\ConsoleApp1\HW3\obj\Debug\HW3.pdb
+C:\Users\sivanotc\Downloads\HW3\bin\Debug\HW3.exe.config
+C:\Users\sivanotc\Downloads\HW3\bin\Debug\HW3.exe
+C:\Users\sivanotc\Downloads\HW3\bin\Debug\HW3.pdb
+C:\Users\sivanotc\Downloads\HW3\obj\Debug\HW3.csprojAssemblyReference.cache
+C:\Users\sivanotc\Downloads\HW3\obj\Debug\HW3.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\HW3\obj\Debug\HW3.exe
+C:\Users\sivanotc\Downloads\HW3\obj\Debug\HW3.pdb
