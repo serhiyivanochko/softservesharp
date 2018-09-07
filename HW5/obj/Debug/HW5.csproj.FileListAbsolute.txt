@@ -4,3 +4,10 @@ c:\users\sivanotc\source\repos\ConsoleApp1\HW5\bin\Debug\HW5.pdb
 c:\users\sivanotc\source\repos\ConsoleApp1\HW5\obj\Debug\HW5.csproj.CoreCompileInputs.cache
 c:\users\sivanotc\source\repos\ConsoleApp1\HW5\obj\Debug\HW5.exe
 c:\users\sivanotc\source\repos\ConsoleApp1\HW5\obj\Debug\HW5.pdb
+C:\Users\sivanotc\Downloads\softservesharp-master\HW5\bin\Debug\HW5.exe.config
+C:\Users\sivanotc\Downloads\softservesharp-master\HW5\bin\Debug\HW5.exe
+C:\Users\sivanotc\Downloads\softservesharp-master\HW5\bin\Debug\HW5.pdb
+C:\Users\sivanotc\Downloads\softservesharp-master\HW5\obj\Debug\HW5.csprojAssemblyReference.cache
+C:\Users\sivanotc\Downloads\softservesharp-master\HW5\obj\Debug\HW5.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\softservesharp-master\HW5\obj\Debug\HW5.exe
+C:\Users\sivanotc\Downloads\softservesharp-master\HW5\obj\Debug\HW5.pdb
