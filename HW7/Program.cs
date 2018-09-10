@@ -61,6 +61,7 @@ namespace HW7
         public Shape(string name) { this.Name = name; }
         public abstract double Area();
         public abstract double Perimeter();
+       
     }
     public class Circle : Shape {
         public int Radius { get; set; }
@@ -76,6 +77,7 @@ namespace HW7
         {
             return 2 * Math.PI * this.Radius;
         }
+        
     }
     public class Square : Shape
     {
@@ -93,6 +95,7 @@ namespace HW7
         {
             return this.Side*4;
         }
+       
     }
 
     #endregion
@@ -113,7 +116,23 @@ namespace HW7
             //}
             #endregion
             #region Homework
-
+            List<Shape> list1 = new List<Shape>();
+            list1.Add(new Circle("Circle1", 10));
+            list1.Add(new Circle("Circle2", 3));
+            list1.Add(new Square("Square1", 5));
+            list1.Add(new Square("Square2", 7));
+            list1.Add(new Circle("Circle3", 9));
+            list1.Add(new Square("Square3", 11));
+            list1.Add(new Circle("Circle4", 23));
+            list1.Add(new Square("Square4", 22));
+            list1.Add(new Circle("Circle5", 45));
+            list1.Add(new Square("Square5", 7));
+            Shape max_p = list1[0];
+            foreach (var current in list1) {
+                Console.WriteLine("Shape name: " + current.Name + ":\nArea: " + current.Area() + "\nPerimeter: " + current.Perimeter());
+                if (max_p.Perimeter() < current.Perimeter()) { max_p = current; }
+            }
+            Console.WriteLine("Max perimeter in {0}",max_p.Name);
             #endregion
         }
     }
