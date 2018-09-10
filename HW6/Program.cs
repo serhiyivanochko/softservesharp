@@ -11,15 +11,17 @@ namespace HW6
     class Program
     {
         #region Task 1
-        static double Div(double num1, double num2) {
+        static double Div(double num1, double num2)
+        {
             try
             {
                 return num1 / num2;
             }
-            catch (DivideByZeroException e) {
+            catch (DivideByZeroException e)
+            {
                 return e.HResult;
             }
-            
+
         }
         #endregion
 
@@ -50,18 +52,21 @@ namespace HW6
         #endregion
 
         #region Homework 2
-        static string Output(object obj, int start, int end) {
+        static string Output(object obj, int start, int end)
+        {
             try
             {
                 if (Convert.ToInt32(obj) > start && Convert.ToInt32(obj) < end)
                 {
                     return obj.ToString();
                 }
-                else {
+                else
+                {
                     return "";
                 }
             }
-            catch (Exception e) {
+            catch (Exception e)
+            {
                 return e.Message;
             }
 
@@ -120,11 +125,12 @@ namespace HW6
 
                 }
             }
-            catch {
+            catch
+            {
                 Console.WriteLine("Error");
             }
             finally { sw1.Close(); }
-            
+
 
 
 
@@ -161,14 +167,15 @@ namespace HW6
                 Console.WriteLine("Error");
             }
             finally { sr1.Close(); }
-            
+
             Console.Write("Enter name: ");
             string name = Console.ReadLine();
             try
             {
                 Console.WriteLine("Phone: {0}", dic[name]);
             }
-            catch {
+            catch
+            {
                 Console.WriteLine("Cannot find number");
             }
 
@@ -185,7 +192,7 @@ namespace HW6
                 Console.WriteLine("Error");
             }
             finally { sw2.Close(); }
-            
+
             string regex = @"^80\d{9}$";
 
             for (int i = 0; i < dic.Keys.Count; i++)
@@ -210,17 +217,25 @@ namespace HW6
                 Console.WriteLine("Error");
             }
             finally { sw2.Close(); }
-            
+
             #endregion
 
             #region HomeWork 2
             object a = "";
+            int c = 0;
             do
             {
                 Console.WriteLine("Enter smth");
                 a = Console.ReadLine();
-                Console.WriteLine(Output(a, 5, 10));
-            } while (a != "");
+                int nextmin = 0;
+                try
+                {
+                    nextmin = Convert.ToInt32(Output(a, nextmin, 100));
+                    c++;
+                }
+                catch { }
+
+            } while (c < 10);
 
             #endregion
         }
