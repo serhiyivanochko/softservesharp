@@ -1,0 +1,7 @@
+C:\Users\sivanotc\source\repos\softservesharp\HW8\bin\Debug\HW8.exe.config
+C:\Users\sivanotc\source\repos\softservesharp\HW8\bin\Debug\HW8.exe
+C:\Users\sivanotc\source\repos\softservesharp\HW8\bin\Debug\HW8.pdb
+C:\Users\sivanotc\source\repos\softservesharp\HW8\obj\Debug\HW8.csprojAssemblyReference.cache
+C:\Users\sivanotc\source\repos\softservesharp\HW8\obj\Debug\HW8.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\source\repos\softservesharp\HW8\obj\Debug\HW8.exe
+C:\Users\sivanotc\source\repos\softservesharp\HW8\obj\Debug\HW8.pdb
