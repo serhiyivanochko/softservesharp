@@ -1,0 +1,5 @@
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Event\bin\Debug\Event.exe.config
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Event\bin\Debug\Event.exe
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Event\bin\Debug\Event.pdb
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Event\obj\Debug\Event.exe
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Event\obj\Debug\Event.pdb

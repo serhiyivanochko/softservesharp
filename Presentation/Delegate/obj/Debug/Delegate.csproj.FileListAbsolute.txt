@@ -1,0 +1,6 @@
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Delegate\bin\Debug\Delegate.exe.config
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Delegate\bin\Debug\Delegate.exe
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Delegate\bin\Debug\Delegate.pdb
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Delegate\obj\Debug\Delegate.csprojResolveAssemblyReference.cache
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Delegate\obj\Debug\Delegate.exe
+c:\users\serhiy ivanochko\documents\visual studio 2015\Projects\Presentation\Delegate\obj\Debug\Delegate.pdb
