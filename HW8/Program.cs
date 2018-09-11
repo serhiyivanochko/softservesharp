@@ -37,7 +37,12 @@ namespace HW8
             Console.WriteLine(list.Min());
             Console.WriteLine(list.Sum());
             Console.WriteLine(list.First(n => n < list.Average()));
-
+            list.OrderBy(n => n);
+            foreach (var current in items)
+            {
+                Console.Write(current + " ");
+            }
+            Console.WriteLine();
         }
     }
 }
