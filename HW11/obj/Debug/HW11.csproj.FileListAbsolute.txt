@@ -1,0 +1,8 @@
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\HW11.exe.config
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\HW11.exe
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\HW11.pdb
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.csproj.CopyComplete
+C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.exe
+C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.pdb
