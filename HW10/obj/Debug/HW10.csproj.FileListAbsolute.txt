@@ -1,9 +1,0 @@
-C:\Users\sivanotc\source\repos\softservesharp\HW10\bin\Debug\HW10.exe.config
-C:\Users\sivanotc\source\repos\softservesharp\HW10\bin\Debug\HW10.exe
-C:\Users\sivanotc\source\repos\softservesharp\HW10\bin\Debug\HW10.pdb
-C:\Users\sivanotc\source\repos\softservesharp\HW10\obj\Debug\HW10.csprojAssemblyReference.cache
-C:\Users\sivanotc\source\repos\softservesharp\HW10\obj\Debug\HW10.csproj.CoreCompileInputs.cache
-C:\Users\sivanotc\source\repos\softservesharp\HW10\obj\Debug\HW10.exe
-C:\Users\sivanotc\source\repos\softservesharp\HW10\obj\Debug\HW10.pdb
-C:\Users\sivanotc\source\repos\softservesharp\HW10\bin\Debug\Newtonsoft.Json.dll
-C:\Users\sivanotc\source\repos\softservesharp\HW10\obj\Debug\HW10.csproj.CopyComplete
