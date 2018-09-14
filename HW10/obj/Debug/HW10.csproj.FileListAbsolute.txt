@@ -1,0 +1,6 @@
+C:\Users\sivanotc\Downloads\softservesharp\HW10\bin\Debug\HW10.exe.config
+C:\Users\sivanotc\Downloads\softservesharp\HW10\bin\Debug\HW10.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW10\bin\Debug\HW10.pdb
+C:\Users\sivanotc\Downloads\softservesharp\HW10\obj\Debug\HW10.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW10\obj\Debug\HW10.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW10\obj\Debug\HW10.pdb

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HW9
 {
-    struct Point {
+    public struct Point {
         int x { get; set; }
         int y { get; set; }
         public Point(int _x, int _y) {
@@ -17,8 +17,8 @@ namespace HW9
         {
             return Convert.ToInt32(
                         Math.Sqrt(
-                            Math.Abs(this.x - p.x * this.x - p.x) +
-                            Math.Abs(this.y - p.y * this.y - p.y)
+                           (this.x - p.x) * (this.x - p.x) +
+                           (this.y - p.y) * (this.y - p.y)
                         )
                    );
         }
@@ -27,7 +27,7 @@ namespace HW9
             return "\"("+this.x+","+this.y+")\"";
         }
     }
-    class Triangle {
+    public class Triangle {
         Point vertex1, vertex2, vertex3;
         public Triangle() { }
         public Triangle(Point _vertex1, Point _vertex2, Point _vertex3) {
@@ -62,12 +62,15 @@ namespace HW9
         static void Main(string[] args)
         {
 
+
             Point p1, p2, p3;
             p1 = new Point(10, 20);
-            p2 = new Point(20, 50);
-            p3 = new Point(50, 10);
+            p2 = new Point(20, 30);
+            p3 = new Point(30, 10);
             Triangle tr1 = new Triangle(p1, p2, p3);
             tr1.Print();
+
+
         }
     }
 }

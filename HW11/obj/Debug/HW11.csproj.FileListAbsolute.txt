@@ -6,3 +6,12 @@ C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.csproj.CoreCom
 C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.csproj.CopyComplete
 C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.exe
 C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.pdb
+C:\Users\sivanotc\Downloads\softservesharp\HW11\bin\Debug\HW11.exe.config
+C:\Users\sivanotc\Downloads\softservesharp\HW11\bin\Debug\HW11.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW11\bin\Debug\HW11.pdb
+C:\Users\sivanotc\Downloads\softservesharp\HW11\bin\Debug\Newtonsoft.Json.dll
+C:\Users\sivanotc\Downloads\softservesharp\HW11\obj\Debug\HW11.csprojAssemblyReference.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW11\obj\Debug\HW11.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW11\obj\Debug\HW11.csproj.CopyComplete
+C:\Users\sivanotc\Downloads\softservesharp\HW11\obj\Debug\HW11.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW11\obj\Debug\HW11.pdb
