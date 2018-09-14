@@ -19,10 +19,11 @@ namespace HW10
     }
     class Program
     {
-
+        public delegate double myDelegate(double d);
+        //public double Tabulation(myDelegate d, ) { }
         static void Main(string[] args)
         {
-
+           
         }
     }
 }
