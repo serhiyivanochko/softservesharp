@@ -4,29 +4,53 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace FinalProject
 {
     class Program
     {
-        void FindByColor(List<Fruit> list, string color) {
-            var result = list.Where(x => x.Name.ToLower() == color.ToLower());
+        public static void FindByColor(List<Fruit> list, string color) {
+            var result = list.Where(x => x.Color.ToLower() == color.ToLower());
             foreach (var current in result) {
                 current.Output();
             }
         }
 
+        public static List<Fruit> Sort(List<Fruit> list) {
+            return list.OrderBy(x=>x.Name).ToList();
+        }
+
+        public static void OutputSorted(List<Fruit> list) {
+            foreach (var current in list) {
+                current.Output();
+            }
+        }
+
+        public static void Serialize(List<Fruit> list) {
+            XmlSerializer formatter = new XmlSerializer(typeof(List<Fruit>));
+            using (FileStream fs = new FileStream("Serialize.xml", FileMode.OpenOrCreate))
+            {
+                formatter.Serialize(fs, list);
+                Console.WriteLine("\nSerialized");
+            }
+        }
+
+        public static List<Fruit> Deserialize() {
+            List<Fruit> list = new List<Fruit>();
+            var serializer = new XmlSerializer(typeof(List<Fruit>));
+            using (var stream = File.OpenRead("Serialize.xml"))
+            {
+                var other = (List<Fruit>)(serializer.Deserialize(stream));
+                list.Clear();
+                list.AddRange(other);
+            }
+            return list;
+        }
+
         static void Main(string[] args)
         {
             List<Fruit> fr = new List<Fruit>();
-            //for (int i = 0; i < 5; i++) {
-            //    Citrus c = new Citrus();
-            //    c.Input();
-            //    fr.Add(c);
-            //}
-            //foreach (var a in fr) {
-            //    a.Output();
-            //}
             StreamReader sr = new StreamReader("Fruits.txt");
             string line;
             while ((line = sr.ReadLine()) != null) {
@@ -48,6 +72,20 @@ namespace FinalProject
             sr.Close();
             foreach (var a in fr) {
                 a.Output();
+            }
+
+            Console.WriteLine("\nFind by color: Yellow.\n");
+            FindByColor(fr, "yellow");
+
+            Console.WriteLine("\nSorted list.\n");
+            OutputSorted(Sort(fr));
+
+            Serialize(fr);
+
+            List<Fruit> list = Deserialize();
+            Console.WriteLine("\nDeserialize list.\n");
+            foreach (var current in list) {
+                current.Output();
             }
 
         }

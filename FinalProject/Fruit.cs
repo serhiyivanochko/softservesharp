@@ -4,9 +4,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace FinalProject
 {
+    
+    [Serializable]
+    [XmlInclude(typeof(Citrus))]
     public class Fruit
     {
         #region Fields

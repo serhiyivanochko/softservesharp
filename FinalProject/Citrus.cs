@@ -5,10 +5,13 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace FinalProject
 {
-    class Citrus: Fruit
+    [Serializable]
+   
+    public class Citrus: Fruit
     {
         #region Fields
 
