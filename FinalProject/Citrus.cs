@@ -12,7 +12,23 @@ namespace FinalProject
     {
         #region Fields
 
-        double vitamin_c { get; set; }
+        double vitamin_c;
+
+        #region Properties
+
+        public double Vitamin_c
+        {
+            get
+            {
+                return vitamin_c;
+            }
+            set
+            {
+                vitamin_c = value;
+            }
+        }
+
+        #endregion
 
         #endregion
 
@@ -50,6 +66,10 @@ namespace FinalProject
         public override void Output()
         {
             Console.WriteLine(ToString());
+        }
+        public override void Output(StreamWriter sr)
+        {
+            sr.Write(ToString());
         }
 
         #endregion

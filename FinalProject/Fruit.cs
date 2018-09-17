@@ -9,13 +9,51 @@ namespace FinalProject
 {
     public class Fruit
     {
-        public string name { get; set; }
-        public string color { get; set; }
+        #region Fields
+
+        string name;
+        string color;
+
+        #region Properties
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+        public string Color
+        {
+            get
+            {
+                return color;
+            }
+            set
+            {
+                color = value;
+            }
+        }
+        
+        #endregion
+
+        #endregion
+
+        #region Constructors
+
         public Fruit() { }
         public Fruit(string name, string color) {
             this.name = name;
             this.color = color;
         }
+
+        #endregion
+
+        #region Input
 
         public virtual void Input() {
             Console.Write("Enter fruit name: ");
@@ -25,18 +63,30 @@ namespace FinalProject
         }
         public virtual void Input(string[] new_fruit)
         {
-                name = new_fruit[0];
-                color = new_fruit[1];
+            name = new_fruit[0];
+            color = new_fruit[1];
         }
+
+        #endregion
+
+        #region Output
 
         public virtual void Output() {
             Console.WriteLine(ToString());
         }
+        public virtual void Output(StreamWriter sr) {
+            sr.Write(ToString());
+        }
+
+        #endregion
+
+        #region Other methods
 
         public override string ToString()
         {
             return $"Fruit: {this.name}, fruit color: {this.color}";
         }
 
+        #endregion
     }
 }

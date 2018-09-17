@@ -9,6 +9,13 @@ namespace FinalProject
 {
     class Program
     {
+        void FindByColor(List<Fruit> list, string color) {
+            var result = list.Where(x => x.Name.ToLower() == color.ToLower());
+            foreach (var current in result) {
+                current.Output();
+            }
+        }
+
         static void Main(string[] args)
         {
             List<Fruit> fr = new List<Fruit>();
