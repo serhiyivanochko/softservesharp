@@ -79,7 +79,7 @@ namespace FinalProject
             Console.WriteLine(ToString());
         }
         public virtual void Output(StreamWriter sr) {
-            sr.Write(ToString());
+            sr.WriteLine(ToString());
         }
 
         #endregion

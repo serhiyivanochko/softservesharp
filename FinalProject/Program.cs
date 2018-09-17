@@ -10,6 +10,11 @@ namespace FinalProject
 {
     class Program
     {
+        const string SerializeFile = "Serialize.xml";
+        const string SortFile = "Sorted.txt";
+        const string FruitFile = "Fruits.txt";
+
+
         public static void FindByColor(List<Fruit> list, string color) {
             var result = list.Where(x => x.Color.ToLower() == color.ToLower());
             foreach (var current in result) {
@@ -22,24 +27,26 @@ namespace FinalProject
         }
 
         public static void OutputSorted(List<Fruit> list) {
+            StreamWriter sw = new StreamWriter(SortFile);
             foreach (var current in list) {
-                current.Output();
+                current.Output(sw);
             }
+            sw.Close();
         }
 
         public static void Serialize(List<Fruit> list) {
             XmlSerializer formatter = new XmlSerializer(typeof(List<Fruit>));
-            using (FileStream fs = new FileStream("Serialize.xml", FileMode.OpenOrCreate))
+            using (FileStream fs = new FileStream(SerializeFile, FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fs, list);
-                Console.WriteLine("\nSerialized");
+                Console.WriteLine("\nSerialized.");
             }
         }
 
         public static List<Fruit> Deserialize() {
             List<Fruit> list = new List<Fruit>();
             var serializer = new XmlSerializer(typeof(List<Fruit>));
-            using (var stream = File.OpenRead("Serialize.xml"))
+            using (var stream = File.OpenRead(SerializeFile))
             {
                 var other = (List<Fruit>)(serializer.Deserialize(stream));
                 list.Clear();
@@ -51,7 +58,7 @@ namespace FinalProject
         static void Main(string[] args)
         {
             List<Fruit> fr = new List<Fruit>();
-            StreamReader sr = new StreamReader("Fruits.txt");
+            StreamReader sr = new StreamReader(FruitFile);
             string line;
             while ((line = sr.ReadLine()) != null) {
                 string[] curr = line.Split(' ');
@@ -77,7 +84,7 @@ namespace FinalProject
             Console.WriteLine("\nFind by color: Yellow.\n");
             FindByColor(fr, "yellow");
 
-            Console.WriteLine("\nSorted list.\n");
+            Console.WriteLine("\nSorted.");
             OutputSorted(Sort(fr));
 
             Serialize(fr);

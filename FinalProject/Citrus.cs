@@ -72,7 +72,7 @@ namespace FinalProject
         }
         public override void Output(StreamWriter sr)
         {
-            sr.Write(ToString());
+            sr.WriteLine(ToString());
         }
 
         #endregion
