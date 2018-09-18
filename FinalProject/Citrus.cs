@@ -10,8 +10,8 @@ using System.Xml.Serialization;
 namespace FinalProject
 {
     [Serializable]
-   
-    public class Citrus: Fruit
+
+    public class Citrus : Fruit
     {
         #region Fields
 
@@ -37,10 +37,13 @@ namespace FinalProject
 
         #region Constructors
 
-        public Citrus() { }
-        public Citrus(string name, string color, double _vitamin_c) : base(name, color)
+        public Citrus()
         {
-            this.vitamin_c = _vitamin_c;
+
+        }
+        public Citrus(string name, string color, double vitamin_c) : base(name, color)
+        {
+            this.vitamin_c = vitamin_c;
         }
 
         #endregion
@@ -51,15 +54,16 @@ namespace FinalProject
         {
             base.Input();
             Console.Write("Enter vitamin C in grams: ");
-            while ((vitamin_c = ToDouble(Console.ReadLine()))==0)
+
+            while ((vitamin_c = ToDouble(Console.ReadLine())) == 0)
             {
                 Console.Write("Incorrect grams format.\r\nEnter vitamin C in grams: ");
             }
         }
-        public override void Input(string[] new_fruit)
+        public override void Input(string[] newFruit)
         {
-            base.Input(new_fruit);
-            this.vitamin_c = ToDouble(new_fruit[2]);
+            base.Input(newFruit);
+            this.vitamin_c = ToDouble(newFruit[2]);
         }
 
         #endregion
@@ -68,22 +72,23 @@ namespace FinalProject
 
         public override void Output()
         {
-            Console.WriteLine(ToString());
+            Console.WriteLine(this);
         }
         public override void Output(StreamWriter sr)
         {
-            sr.WriteLine(ToString());
+            sr.WriteLine(this);
         }
 
         #endregion
 
         #region Other methods
-        public static double ToDouble(string buff_str)
+        public static double ToDouble(string inputString)
         {
             double result;
-            if (!double.TryParse(buff_str, NumberStyles.Any, CultureInfo.CurrentCulture, out result) &&
-                !double.TryParse(buff_str, NumberStyles.Any, CultureInfo.GetCultureInfo("en-US"), out result) &&
-                !double.TryParse(buff_str, NumberStyles.Any, CultureInfo.InvariantCulture, out result))
+
+            if (!double.TryParse(inputString, NumberStyles.Any, CultureInfo.CurrentCulture, out result) &&
+                !double.TryParse(inputString, NumberStyles.Any, CultureInfo.GetCultureInfo("en-US"), out result) &&
+                !double.TryParse(inputString, NumberStyles.Any, CultureInfo.InvariantCulture, out result))
             {
                 return 0;
             }

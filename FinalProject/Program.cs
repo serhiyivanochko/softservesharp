@@ -20,19 +20,24 @@ namespace FinalProject
 
         #region Methods
 
-        public static void FindByColor(List<Fruit> list, string color) {
+        public static void FindByColor(List<Fruit> list, string color)
+        {
             Console.WriteLine($"\nFind by color: {color}:");
             var result = list.Where(x => x.Color.ToLower() == color.ToLower());
-            foreach (var current in result) {
+
+            foreach (var current in result)
+            {
                 current.Output();
             }
         }
 
-        public static List<Fruit> Sort(List<Fruit> list) {
-            return list.OrderBy(x=>x.Name).ToList();
+        public static List<Fruit> Sort(List<Fruit> list)
+        {
+            return list.OrderBy(x => x.Name).ToList();
         }
 
-        public static string OutputSorted(List<Fruit> list) {
+        public static string OutputSorted(List<Fruit> list)
+        {
             StreamWriter sw = new StreamWriter(SortFile);
             try
             {
@@ -50,17 +55,17 @@ namespace FinalProject
             {
                 sw.Close();
             }
-            
+
         }
 
         public static string Serialize(List<Fruit> list)
         {
             XmlSerializer formatter = new XmlSerializer(typeof(List<Fruit>));
-            FileStream fs = new FileStream(SerializeFile, FileMode.OpenOrCreate);
-            fs.SetLength(0);
+            StreamWriter sr = new StreamWriter(SerializeFile,false);
+
             try
             {
-                formatter.Serialize(fs, list);
+                formatter.Serialize(sr, list);
                 return "\nSerialized.";
             }
             catch (Exception e)
@@ -69,57 +74,64 @@ namespace FinalProject
             }
             finally
             {
-                fs.Close();
+                sr.Close();
             }
         }
 
-        public static List<Fruit> Deserialize() {
+        public static List<Fruit> Deserialize()
+        {
             List<Fruit> list = new List<Fruit>();
             var serializer = new XmlSerializer(typeof(List<Fruit>));
-
             var stream = File.OpenRead(SerializeFile);
+
             try
             {
                 var other = (List<Fruit>)(serializer.Deserialize(stream));
+
                 list.Clear();
                 list.AddRange(other);
+
                 Console.WriteLine("\nDeserialized:");
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
-            finally {
+            finally
+            {
                 stream.Close();
             }
             return list;
 
         }
 
-        public static List<Fruit> InputFormFile() {
+        public static List<Fruit> InputFormFile()
+        {
             List<Fruit> list = new List<Fruit>();
             StreamReader sr = new StreamReader(FruitFile);
             string line;
+
             try
             {
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] curr = line.Split(' ');
-                    switch (curr.Length)
+                    string[] currentLine = line.Split(' ');
+
+                    switch (currentLine.Length)
                     {
                         case 2:
-                            Fruit f = new Fruit();
-                            f.Input(curr);
-                            list.Add(f);
+                            Fruit newFruit = new Fruit();
+                            newFruit.Input(currentLine);
+                            list.Add(newFruit);
                             break;
                         case 3:
-                            Citrus f1 = new Citrus();
-                            f1.Input(curr);
-                            list.Add(f1);
+                            Citrus newCitrus = new Citrus();
+                            newCitrus.Input(currentLine);
+                            list.Add(newCitrus);
                             break;
-
-                        
-
+                        default:
+                            Console.WriteLine($"{currentLine[0]} {currentLine[1]} {currentLine[2]} there are some error in file.\n");
+                            break;
                     }
                 }
             }
@@ -127,13 +139,15 @@ namespace FinalProject
             {
                 Console.WriteLine(e.Message);
             }
-            finally {
+            finally
+            {
                 sr.Close();
             }
             return list;
         }
 
-        public static void OutputList(List<Fruit> list) {
+        public static void OutputList(List<Fruit> list)
+        {
             foreach (var current in list)
             {
                 current.Output();
@@ -144,19 +158,19 @@ namespace FinalProject
 
         static void Main(string[] args)
         {
-            List<Fruit> fruit_list = InputFormFile();
+            List<Fruit> fruitList = InputFormFile();
 
-            OutputList(fruit_list);
+            OutputList(fruitList);
 
-            FindByColor(fruit_list, "yellow");
+            FindByColor(fruitList, "yellow");
 
-            Console.WriteLine(OutputSorted(Sort(fruit_list)));
+            Console.WriteLine(OutputSorted(Sort(fruitList)));
 
-            Console.WriteLine(Serialize(fruit_list));
+            Console.WriteLine(Serialize(fruitList));
 
-            List<Fruit> deserialized_list = Deserialize();
+            List<Fruit> deserializedList = Deserialize();
 
-            OutputList(deserialized_list);
+            OutputList(deserializedList);
 
         }
     }

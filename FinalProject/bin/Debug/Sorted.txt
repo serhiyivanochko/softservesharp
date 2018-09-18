@@ -1,5 +1,4 @@
 Fruit: Apple, fruit color: green
 Fruit: Banana, fruit color: yellow
-Fruit: Lemon, fruit color: yellow, vitamine C: 3,5gr.
 Fruit: Orange, fruit color: orange, vitamine C: 3,2gr.
 Fruit: Rasberry, fruit color: red
