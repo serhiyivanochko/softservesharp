@@ -13,37 +13,12 @@ namespace FinalProject
     [XmlInclude(typeof(Citrus))]
     public class Fruit
     {
-        #region Fields
-
-        string name;
-        string color;
+        
 
         #region Properties
 
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-        public string Color
-        {
-            get
-            {
-                return color;
-            }
-            set
-            {
-                color = value;
-            }
-        }
-
-        #endregion
+        public string Name { get; set; }
+        public string Color { get; set; }
 
         #endregion
 

@@ -10,6 +10,7 @@ namespace FinalProject
 {
     class Program
     {
+        //String.Format(); Using
         #region Constants
 
         const string SerializeFile = "Serialize.xml";

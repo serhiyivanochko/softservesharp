@@ -13,25 +13,11 @@ namespace FinalProject
 
     public class Citrus : Fruit
     {
-        #region Fields
-
-        double vitamin_c;
+        
 
         #region Properties
 
-        public double Vitamin_c
-        {
-            get
-            {
-                return vitamin_c;
-            }
-            set
-            {
-                vitamin_c = value;
-            }
-        }
-
-        #endregion
+        public double Vitamin_c { get; set; }
 
         #endregion
 
