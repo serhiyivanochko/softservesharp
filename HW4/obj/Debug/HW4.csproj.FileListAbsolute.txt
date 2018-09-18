@@ -1,1 +1,8 @@
 c:\users\sivanotc\source\repos\ConsoleApp1\HW4\obj\Debug\HW4.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW4\bin\Debug\HW4.exe.config
+C:\Users\sivanotc\Downloads\softservesharp\HW4\bin\Debug\HW4.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW4\bin\Debug\HW4.pdb
+C:\Users\sivanotc\Downloads\softservesharp\HW4\obj\Debug\HW4.csprojAssemblyReference.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW4\obj\Debug\HW4.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW4\obj\Debug\HW4.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW4\obj\Debug\HW4.pdb

@@ -1,0 +1,7 @@
+C:\Users\sivanotc\Downloads\softservesharp\FinalProject\bin\Debug\FinalProject.exe.config
+C:\Users\sivanotc\Downloads\softservesharp\FinalProject\bin\Debug\FinalProject.exe
+C:\Users\sivanotc\Downloads\softservesharp\FinalProject\bin\Debug\FinalProject.pdb
+C:\Users\sivanotc\Downloads\softservesharp\FinalProject\obj\Debug\FinalProject.csprojAssemblyReference.cache
+C:\Users\sivanotc\Downloads\softservesharp\FinalProject\obj\Debug\FinalProject.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\softservesharp\FinalProject\obj\Debug\FinalProject.exe
+C:\Users\sivanotc\Downloads\softservesharp\FinalProject\obj\Debug\FinalProject.pdb

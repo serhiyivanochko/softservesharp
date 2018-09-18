@@ -19,3 +19,10 @@ C:\Users\sivanotc\source\repos\softservesharp\HW3\obj\Debug\HW3.csprojAssemblyRe
 C:\Users\sivanotc\source\repos\softservesharp\HW3\obj\Debug\HW3.csproj.CoreCompileInputs.cache
 C:\Users\sivanotc\source\repos\softservesharp\HW3\obj\Debug\HW3.exe
 C:\Users\sivanotc\source\repos\softservesharp\HW3\obj\Debug\HW3.pdb
+C:\Users\sivanotc\Downloads\softservesharp\HW3\bin\Debug\HW3.exe.config
+C:\Users\sivanotc\Downloads\softservesharp\HW3\bin\Debug\HW3.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW3\bin\Debug\HW3.pdb
+C:\Users\sivanotc\Downloads\softservesharp\HW3\obj\Debug\HW3.csprojAssemblyReference.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW3\obj\Debug\HW3.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\Downloads\softservesharp\HW3\obj\Debug\HW3.exe
+C:\Users\sivanotc\Downloads\softservesharp\HW3\obj\Debug\HW3.pdb
