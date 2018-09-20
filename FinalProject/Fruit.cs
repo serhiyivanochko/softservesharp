@@ -38,7 +38,9 @@ namespace FinalProject
         #endregion
 
         #region Input
-
+        /// <summary>
+        /// Input Fruit from Console
+        /// </summary>
         public virtual void Input()
         {
             Console.Write("Enter fruit name: ");
@@ -48,6 +50,10 @@ namespace FinalProject
             this.Color = Console.ReadLine();
         }
 
+        /// <summary>
+        /// Input Fruit from file
+        /// </summary>
+        /// <param name="newFruit">Splitted string by ' ' symbol</param>
         public virtual void Input(string[] newFruit)
         {
             this.Name = newFruit[0];
@@ -57,11 +63,18 @@ namespace FinalProject
         #endregion
 
         #region Output
-
+        /// <summary>
+        /// Output Fruit to Console
+        /// </summary>
         public virtual void Output()
         {
             Console.WriteLine(this);
         }
+
+        /// <summary>
+        /// Output Fruit to File
+        /// </summary>
+        /// <param name="sr">Stream for output</param>
         public virtual void Output(StreamWriter sr)
         {
             sr.WriteLine(this);
@@ -71,6 +84,10 @@ namespace FinalProject
 
         #region Other methods
 
+        /// <summary>
+        /// Convert object to string
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"Fruit: {this.Name}, fruit color: {this.Color}";

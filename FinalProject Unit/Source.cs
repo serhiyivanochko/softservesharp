@@ -2,6 +2,7 @@
 using NUnit.Framework;
 using FinalProject;
 using System.IO;
+using System.Collections.Generic;
 
 namespace FinalProject_Unit
 {
@@ -123,7 +124,30 @@ namespace FinalProject_Unit
 
     [TestFixture]
     public class TestMain {
-       
+
+        [Test]
+        public void SortTest() {
+            List<Fruit> actual = new List<Fruit>();
+            actual.Add(new Fruit("Fruit3", "Color"));
+            actual.Add(new Fruit("Fruit1", "Color"));
+            actual.Add(new Fruit("Fruit2", "Color"));
+            actual.Add(new Fruit("Fruit4", "Color"));
+
+            actual = Program.Sort(actual);
+
+            List<Fruit> expected = new List<Fruit>();
+            expected.Add(new Fruit("Fruit1", "Color"));
+            expected.Add(new Fruit("Fruit2", "Color"));
+            expected.Add(new Fruit("Fruit3", "Color"));
+            expected.Add(new Fruit("Fruit4", "Color"));
+
+
+            for (int i = 0; i < actual.Count; i++) {
+                Assert.AreEqual(actual[i].Name, expected[i].Name);
+            }
+        }
+        
 
     }
+
 }

@@ -8,19 +8,16 @@ using System.Xml.Serialization;
 
 namespace FinalProject
 {
-    class Program
+    public class Program
     {
         //String.Format(); Using
-        //#region Constants
-
-        //const string SerializeFile = "Serialize.xml";
-        //const string SortFile = "Sorted.txt";
-        //const string FruitFile = "Fruits.txt";
-
-        //#endregion
 
         #region Methods
-
+        /// <summary>
+            /// Find and output to Console items with input color
+            /// </summary>
+            /// <param name="list">List items</param>
+            /// <param name="color">Color for searching</param>
         public static void FindByColor(List<Fruit> list, string color)
         {
             Console.WriteLine($"\nFind by color: {color}:");
@@ -32,11 +29,21 @@ namespace FinalProject
             }
         }
 
+        /// <summary>
+        /// Sort list by Name of Fruit object
+        /// </summary>
+        /// <param name="list">List of items</param>
+        /// <returns>Sorted list</returns>
         public static List<Fruit> Sort(List<Fruit> list)
         {
             return list.OrderBy(x => x.Name).ToList();
         }
 
+        /// <summary>
+        /// Output sorted list to Console
+        /// </summary>
+        /// <param name="list">List of items</param>
+        /// <returns>Result message</returns>
         public static string OutputSorted(List<Fruit> list)
         {
             StreamWriter sw = new StreamWriter(GlobalConst.SortFile);
@@ -59,6 +66,11 @@ namespace FinalProject
 
         }
 
+        /// <summary>
+        /// Serialize list to XML document
+        /// </summary>
+        /// <param name="list">List of items</param>
+        /// <returns>Result message</returns>
         public static string Serialize(List<Fruit> list)
         {
             XmlSerializer formatter = new XmlSerializer(typeof(List<Fruit>));
@@ -79,6 +91,10 @@ namespace FinalProject
             }
         }
 
+        /// <summary>
+        /// Deserialize XML document to list of fruits
+        /// </summary>
+        /// <returns>List of items</returns>
         public static List<Fruit> Deserialize()
         {
             List<Fruit> list = new List<Fruit>();
@@ -106,6 +122,10 @@ namespace FinalProject
 
         }
 
+        /// <summary>
+        /// Create List of items from file
+        /// </summary>
+        /// <returns>List of items</returns>
         public static List<Fruit> InputFormFile()
         {
             List<Fruit> list = new List<Fruit>();
@@ -147,6 +167,10 @@ namespace FinalProject
             return list;
         }
 
+        /// <summary>
+        /// Output List of items to Console
+        /// </summary>
+        /// <param name="list"></param>
         public static void OutputList(List<Fruit> list)
         {
             foreach (var current in list)

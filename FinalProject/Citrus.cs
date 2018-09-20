@@ -35,7 +35,9 @@ namespace FinalProject
         #endregion
 
         #region Inputs
-
+        /// <summary>
+        /// Input Citrus from Console
+        /// </summary>
         public override void Input()
         {
             base.Input();
@@ -46,6 +48,11 @@ namespace FinalProject
                 Console.Write("Incorrect grams format.\r\nEnter vitamin C in grams: ");
             }
         }
+
+        /// <summary>
+        /// Input Citrus from file
+        /// </summary>
+        /// <param name="newFruit">Splitted string by ' ' symbol</param>
         public override void Input(string[] newFruit)
         {
             base.Input(newFruit);
@@ -55,11 +62,18 @@ namespace FinalProject
         #endregion
 
         #region Output
-
+        /// <summary>
+        /// Output Citrus to Console
+        /// </summary>
         public override void Output()
         {
             Console.WriteLine(this);
         }
+        
+        /// <summary>
+        /// Output Citrus to File
+        /// </summary>
+        /// <param name="sr">Stream for output</param>
         public override void Output(StreamWriter sr)
         {
             sr.WriteLine(this);
@@ -68,6 +82,11 @@ namespace FinalProject
         #endregion
 
         #region Other methods
+        /// <summary>
+        /// Convert string to double
+        /// </summary>
+        /// <param name="inputString">string double value</param>
+        /// <returns></returns>
         public static double ToDouble(string inputString)
         {
             double result;
@@ -84,6 +103,10 @@ namespace FinalProject
             }
         }
 
+        /// <summary>
+        /// Convert object to string
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             return $"{base.ToString()}, vitamine C: {this.Vitamin_c}gr.";
