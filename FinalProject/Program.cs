@@ -11,13 +11,13 @@ namespace FinalProject
     class Program
     {
         //String.Format(); Using
-        #region Constants
+        //#region Constants
 
-        const string SerializeFile = "Serialize.xml";
-        const string SortFile = "Sorted.txt";
-        const string FruitFile = "Fruits.txt";
+        //const string SerializeFile = "Serialize.xml";
+        //const string SortFile = "Sorted.txt";
+        //const string FruitFile = "Fruits.txt";
 
-        #endregion
+        //#endregion
 
         #region Methods
 
@@ -39,7 +39,7 @@ namespace FinalProject
 
         public static string OutputSorted(List<Fruit> list)
         {
-            StreamWriter sw = new StreamWriter(SortFile);
+            StreamWriter sw = new StreamWriter(GlobalConst.SortFile);
             try
             {
                 foreach (var current in list)
@@ -62,7 +62,7 @@ namespace FinalProject
         public static string Serialize(List<Fruit> list)
         {
             XmlSerializer formatter = new XmlSerializer(typeof(List<Fruit>));
-            StreamWriter sr = new StreamWriter(SerializeFile,false);
+            StreamWriter sr = new StreamWriter(GlobalConst.SerializeFile,false);
 
             try
             {
@@ -83,7 +83,7 @@ namespace FinalProject
         {
             List<Fruit> list = new List<Fruit>();
             var serializer = new XmlSerializer(typeof(List<Fruit>));
-            var stream = File.OpenRead(SerializeFile);
+            var stream = File.OpenRead(GlobalConst.SerializeFile);
 
             try
             {
@@ -109,7 +109,7 @@ namespace FinalProject
         public static List<Fruit> InputFormFile()
         {
             List<Fruit> list = new List<Fruit>();
-            StreamReader sr = new StreamReader(FruitFile);
+            StreamReader sr = new StreamReader(GlobalConst.FruitFile);
             string line;
 
             try

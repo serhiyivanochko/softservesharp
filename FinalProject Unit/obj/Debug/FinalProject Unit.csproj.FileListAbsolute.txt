@@ -14,3 +14,22 @@ D:\SofServe\softservesharp\FinalProject Unit\bin\Debug\nunit.engine.api.dll
 D:\SofServe\softservesharp\FinalProject Unit\bin\Debug\Mono.Cecil.dll
 D:\SofServe\softservesharp\FinalProject Unit\bin\Debug\FinalProject.exe
 D:\SofServe\softservesharp\FinalProject Unit\bin\Debug\FinalProject.pdb
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\obj\Debug\FinalProject Unit.csprojAssemblyReference.cache
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\obj\Debug\FinalProject Unit.csproj.CoreCompileInputs.cache
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\obj\Debug\FinalProject Unit.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\obj\Debug\FinalProject Unit.pdb
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\nunit.engine.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\nunit.engine.api.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\Mono.Cecil.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\FinalProject Unit.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\FinalProject Unit.pdb
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\FinalProject.exe
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\nunit.framework.dll
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\FinalProject.pdb
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\FinalProject.exe.config
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\nunit.framework.pdb
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\bin\Debug\nunit.framework.xml
+C:\Users\sivanotc\source\repos\softservesharp\FinalProject Unit\obj\Debug\FinalProject Unit.csproj.CopyComplete

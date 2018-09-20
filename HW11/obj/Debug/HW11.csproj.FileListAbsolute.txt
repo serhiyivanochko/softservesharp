@@ -30,3 +30,12 @@ D:\SofServe\softservesharp\HW11\bin\Debug\Mono.Cecil.dll
 D:\SofServe\softservesharp\HW11\bin\Debug\nunit.framework.dll
 D:\SofServe\softservesharp\HW11\bin\Debug\nunit.framework.pdb
 D:\SofServe\softservesharp\HW11\bin\Debug\nunit.framework.xml
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\NUnit3.TestAdapter.dll
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\NUnit3.TestAdapter.pdb
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\nunit.engine.dll
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\nunit.engine.api.dll
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\Mono.Cecil.dll
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\nunit.framework.dll
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\nunit.framework.pdb
+C:\Users\sivanotc\source\repos\softservesharp\HW11\bin\Debug\nunit.framework.xml
+C:\Users\sivanotc\source\repos\softservesharp\HW11\obj\Debug\HW11.csprojAssemblyReference.cache

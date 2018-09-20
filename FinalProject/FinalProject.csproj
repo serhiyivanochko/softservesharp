@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Citrus.cs" />
     <Compile Include="Fruit.cs" />
+    <Compile Include="GlobalConst.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
