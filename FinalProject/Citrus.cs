@@ -29,7 +29,7 @@ namespace FinalProject
         }
         public Citrus(string name, string color, double vitamin_c) : base(name, color)
         {
-            this.vitamin_c = vitamin_c;
+            this.Vitamin_c = vitamin_c;
         }
 
         #endregion
@@ -41,7 +41,7 @@ namespace FinalProject
             base.Input();
             Console.Write("Enter vitamin C in grams: ");
 
-            while ((vitamin_c = ToDouble(Console.ReadLine())) == 0)
+            while ((this.Vitamin_c = ToDouble(Console.ReadLine())) == 0)
             {
                 Console.Write("Incorrect grams format.\r\nEnter vitamin C in grams: ");
             }
@@ -49,7 +49,7 @@ namespace FinalProject
         public override void Input(string[] newFruit)
         {
             base.Input(newFruit);
-            this.vitamin_c = ToDouble(newFruit[2]);
+            this.Vitamin_c = ToDouble(newFruit[2]);
         }
 
         #endregion
@@ -86,7 +86,7 @@ namespace FinalProject
 
         public override string ToString()
         {
-            return $"{base.ToString()}, vitamine C: {vitamin_c}gr.";
+            return $"{base.ToString()}, vitamine C: {this.Vitamin_c}gr.";
         }
         #endregion
     }

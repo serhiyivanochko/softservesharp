@@ -12,3 +12,16 @@ C:\Users\sivanotc\Downloads\softservesharp\HW7\obj\Debug\HW7.csprojAssemblyRefer
 C:\Users\sivanotc\Downloads\softservesharp\HW7\obj\Debug\HW7.csproj.CoreCompileInputs.cache
 C:\Users\sivanotc\Downloads\softservesharp\HW7\obj\Debug\HW7.exe
 C:\Users\sivanotc\Downloads\softservesharp\HW7\obj\Debug\HW7.pdb
+D:\SofServe\softservesharp\HW7\bin\Debug\HW7.exe.config
+D:\SofServe\softservesharp\HW7\bin\Debug\HW7.exe
+D:\SofServe\softservesharp\HW7\bin\Debug\HW7.pdb
+D:\SofServe\softservesharp\HW7\obj\Debug\HW7.exe
+D:\SofServe\softservesharp\HW7\obj\Debug\HW7.pdb
+D:\SofServe\softservesharp\HW7\bin\Debug\NUnit3.TestAdapter.dll
+D:\SofServe\softservesharp\HW7\bin\Debug\NUnit3.TestAdapter.pdb
+D:\SofServe\softservesharp\HW7\bin\Debug\nunit.engine.dll
+D:\SofServe\softservesharp\HW7\bin\Debug\nunit.engine.api.dll
+D:\SofServe\softservesharp\HW7\bin\Debug\Mono.Cecil.dll
+D:\SofServe\softservesharp\HW7\bin\Debug\nunit.framework.dll
+D:\SofServe\softservesharp\HW7\bin\Debug\nunit.framework.pdb
+D:\SofServe\softservesharp\HW7\bin\Debug\nunit.framework.xml

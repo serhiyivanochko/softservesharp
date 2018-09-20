@@ -31,8 +31,8 @@ namespace FinalProject
 
         public Fruit(string name, string color)
         {
-            this.name = name;
-            this.color = color;
+            this.Name = name;
+            this.Color = color;
         }
 
         #endregion
@@ -42,16 +42,16 @@ namespace FinalProject
         public virtual void Input()
         {
             Console.Write("Enter fruit name: ");
-            this.name = Console.ReadLine();
+            this.Name = Console.ReadLine();
 
             Console.Write("Enter fruit color: ");
-            this.color = Console.ReadLine();
+            this.Color = Console.ReadLine();
         }
 
         public virtual void Input(string[] newFruit)
         {
-            name = newFruit[0];
-            color = newFruit[1];
+            this.Name = newFruit[0];
+            this.Color = newFruit[1];
         }
 
         #endregion
@@ -73,7 +73,7 @@ namespace FinalProject
 
         public override string ToString()
         {
-            return $"Fruit: {this.name}, fruit color: {this.color}";
+            return $"Fruit: {this.Name}, fruit color: {this.Color}";
         }
 
         #endregion
