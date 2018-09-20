@@ -3,6 +3,8 @@ using NUnit.Framework;
 using FinalProject;
 using System.IO;
 using System.Collections.Generic;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace FinalProject_Unit
 {
@@ -146,7 +148,20 @@ namespace FinalProject_Unit
                 Assert.AreEqual(actual[i].Name, expected[i].Name);
             }
         }
-        
+        [Test]
+        public void SerializationTest() {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(GlobalConst.FileDirectory+GlobalConst.SerializeFile);
+            XmlNodeList list = doc.GetElementsByTagName("Fruit");
+            string str = "Fruit: ";
+            foreach (XmlNode current in list) {
+                foreach (XmlElement currentFruit in current.ChildNodes) {
+                    str+= (currentFruit.InnerText);
+                }
+
+            }
+
+        }
 
     }
 
